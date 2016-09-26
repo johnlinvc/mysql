@@ -7,8 +7,8 @@ dist: trusty
 osx_image: xcode8
 install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      brew install versions/mysql56;
-      brew link versions/mysql56;
+      brew install homebrew/versions/mysql56;
+      brew link homebrew/versions/mysql56;
       mysql.server start;
     fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
